@@ -18,7 +18,7 @@ const Reviews = () => {
   const totalPage = Math.ceil(reviews?.length / reviewPerPage);
   return (
     <div className="reviews">
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <div className="topHeader">
           <h2 className="title">Reviews</h2>
           <Box

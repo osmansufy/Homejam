@@ -7,7 +7,7 @@ import ShowsSlider from "./ShowsSlider";
 const Shows = () => {
   return (
     <div className="showContainer">
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <div className="topHeader">
           <h2 className="title">Upcoming Shows</h2>
           <a>View All</a>

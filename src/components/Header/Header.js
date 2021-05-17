@@ -7,7 +7,7 @@ import NavBar from "./NavBar";
 const Header = () => {
   return (
     <div className="header">
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <NavBar />
         <Banner />
         <Label />
