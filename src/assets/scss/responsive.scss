@@ -1,0 +1,16 @@
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  html {
+    font-size: 12px;
+  }
+  .svg {
+    .svg-circle-progress {
+      font-size: 1.2rem;
+    }
+  }
+  .perfomerContainer {
+    .makeStyles-root-19 {
+      margin: 0 10px;
+    }
+  }
+}

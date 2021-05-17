@@ -1,0 +1,232 @@
+@import "./mixin.scss";
+
+body {
+  overflow-x: hidden;
+  background-color: #0a0b1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: url("../images/Img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  .navItemWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navItem {
+      justify-content: center;
+      align-items: center;
+      // margin: 0 20px;
+      color: white;
+      list-style: none;
+      img {
+        @include flex-center;
+      }
+    }
+  }
+}
+.banner {
+  padding: 20% 0;
+  h1 {
+    color: white;
+  }
+  p {
+    color: #ffffff;
+    opacity: 0.6;
+  }
+}
+.labelWrapper {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  .labelItem {
+    // border: 1px solid #2c2d3a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 90px;
+
+    position: relative;
+
+    &::after {
+      //   transform: translateX(-100%);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 99.5%;
+      height: 100%;
+      //   background-color: #1fbfac;
+
+      border: 2px solid red;
+      border-radius: 50%;
+    }
+    &:hover {
+    }
+  }
+}
+.showContainer {
+  padding: 70px 0;
+
+  .topHeader {
+    @include top-title();
+
+    a {
+      text-decoration: none;
+      color: #ab9348;
+    }
+  }
+  .MuiCardContent-root {
+    .performerName {
+      color: #ffffff;
+      margin-top: 15px;
+    }
+  }
+
+  span.pCategory {
+    background-color: #e5c558;
+    color: #ffff;
+    padding: 3px 7px;
+    border-radius: 2px;
+  }
+  .showBtnContainer {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  .btnAction {
+    color: #0647bb;
+    font-weight: 700;
+  }
+  .iconBtn {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #292a3e;
+      left: 0;
+      width: 2px;
+      height: 100%;
+    }
+  }
+}
+
+.singleReview {
+  color: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 2px solid #e5af56;
+  box-shadow: 6px -6px #276c73;
+  .reviewProfile {
+    display: flex;
+    align-items: center;
+    .reviewInfo {
+      margin-left: 20px;
+      .reviewAddress {
+        display: flex;
+        align-items: center;
+        color: #e5c558;
+        font-size: 11px;
+        opacity: 0.9;
+      }
+    }
+  }
+  .reviewContent {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-top: 20px;
+  }
+}
+.reviews {
+  color: #ffffff;
+  .topHeader {
+    @include top-title();
+    .pagination {
+      @include flex-center;
+      .paginationBtn {
+        @include flex-center;
+        button {
+          @include flex-center;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.svg {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  .svg-circle-bg {
+    fill: none;
+  }
+  .svg-circle {
+    fill: none;
+  }
+  .svg-circle-text {
+    font-size: 1.2rem;
+    text-anchor: middle;
+    fill: #fff;
+    opacity: 0.5;
+  }
+  .svg-circle-progress {
+    font-size: 1.8rem;
+    text-anchor: middle;
+    font-weight: bold;
+    fill: #fff;
+  }
+}
+.showsSlider {
+  .slick-list {
+    padding: 0 20% 0 0 !important;
+  }
+}
+.labelSlider {
+  .slick-list {
+    padding: 0 20% 0 0 !important;
+  }
+}
+.reviewSlider {
+  margin: 50px 0;
+  .slick-slider .slick-slide {
+    padding: 0 15px;
+  }
+  .slick-list {
+    padding: 0 20% 0 0 !important;
+  }
+  .singleSlider {
+    max-width: 90%;
+  }
+}
+button.slick-arrow.slick-next,
+button.slick-arrow.slick-prev {
+  display: none !important;
+}
+
+.navDrawer {
+  .MuiDrawer-paper {
+    background-color: #101128;
+    .drawerItem {
+      color: #ffffff;
+      .MuiSvgIcon-root {
+        color: #ffffff;
+      }
+    }
+  }
+}
