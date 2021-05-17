@@ -198,6 +198,9 @@ body {
   .slick-list {
     padding: 0 20% 0 0 !important;
   }
+  .slick-slide.slick-active.slick-center.slick-current {
+    margin-right: 20px;
+  }
 }
 .labelSlider {
   .slick-list {
